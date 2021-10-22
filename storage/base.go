@@ -7,6 +7,7 @@ import (
 )
 
 type ResourceContent interface {
+	Type() string
 	SecondaryTypes() []string
 	Attributes() map[string]string
 }
